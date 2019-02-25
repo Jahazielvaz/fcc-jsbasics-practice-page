@@ -36,7 +36,28 @@ let additionFunction = () => {
   alert(result);
 }
 
+//EXERCISE 3: Validation Based on Character Length: Have the users type in a nickname. and validate the form to take no less than 3 characters, and no more than 10 characters.
+let nickname = () => {
+  let name = document.getElementById('test3').value;
 
+  if(name.length < 3){
+    alert("You must have at least 3 characters");
+    return false;
+  } else if (name.length > 10){
+    alert("You must have no more than 10 characters");
+    return false;
+  } else {
+    alert("Congratulations on your new nickname");
+  }
+}
+
+//EXERCISE 4: Find out the number of characters a user has in their username, and return it to them.
+let characterLength = () => {
+  let name = document.getElementById('test4').value;
+  let result = `There are ${name.length} characters in your nickname`;
+
+  alert(result);
+}
 
 
 

@@ -9,19 +9,29 @@
     <section id="form-section">
       <form onsubmit="parseNumber()" action="#" method="post">
         <h1>Testing Form</h1>
+        <p>Input a number, or set of numbers and find out if they're even or odd.</p>
         <input id="test1" type="text" placeholder="Type A Number"><br><br>
         <input type="submit">
       </form>
 
       <form onsubmit="additionFunction()" action="#" method="post">
         <h1>Sales Tax Calculator</h1>
-        <input id="test2" type="text" placeholder="Input the total amount you spent on purchases throughout the year"><br><br>
+        <p>Input the total amount you spent on purchases throughout the year. This form will tell you the real amount you spent including sales tax</p>
+        <input id="test2" type="text" placeholder="$23222"><br><br>
         <input type="submit">
       </form>
 
-      <form onsubmit="" action="#" method="post">
-        <h1></h1>
-        <input id="test2" type="text" placeholder=""><br><br>
+      <form onsubmit="nickname()" action="#" method="post">
+        <h1>Create a nickname</h1>
+        <p>Note: The nickname must not be shorter than 3 characters, or longer than 10 characters.</p>
+        <input  id="test3" type="text" placeholder="Your nickname"><br><br>
+        <input type="submit">
+      </form>
+
+      <form onsubmit="characterLength()" action="#" method="submit">
+        <h1>Username Character Count</h1>
+        <p>This form will tel you how many characters there are in your chosen username</p>
+        <input type="text" id="test4" placeholder="Choose your username">
         <input type="submit">
       </form>
 
