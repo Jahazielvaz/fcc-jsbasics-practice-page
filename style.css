@@ -1,0 +1,29 @@
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+form{
+  box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, .3);
+  margin: 40px auto;
+  width: 300px;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+input{
+  width: 100%;
+  height: 40px;
+  border-radius:10px;
+  margin: 10px auto;
+  font-size: 15px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, .3);
+}

@@ -1,0 +1,57 @@
+// OPERATORS
+
+
+//Odd Even Form Exercise: What I wanted to do here was to take the number inputed by the user, and create a function that would tell me if that number was even or odd.
+//The first challenge was parsing the returned data which is by default a string, into a number format. I used the Number() function to parse the value I got back.
+//The second challenge after that was to figure out if the number was even or odd, so I used the remainder operation and divided the result by 2 Example: % 2. and then I used a conditional to tell it that if the result was 0 (which would make the number even) to send an alert telling the user their number was even
+//The next challenge is using form validation to make sure the user doesn't input anything other than a number
+
+let parseNumber = () =>{
+  let userValue = document.getElementById('test1')
+  let result = Number(userValue.value);
+  let operation = result % 2;
+
+  if(operation === 0){
+    alert('Your Number Is Even')
+  } else if(operation === 1 ) {
+    alert('Your Number Is Odd');
+  }  else {
+    alert('Please type numbers only!');
+    return false;
+  }
+
+}
+
+let testFunction = () => {
+  alert('This is just a test');
+}
+
+
+//EXERCISE 2: Augmented Addition: Make a form that tells the user the total amount of money they spent on purchases, including the sales Tax, for the year, by having them input their total yearly expenses.
+let additionFunction = () => {
+  let element = Number(document.getElementById('test2').value);
+  element = element *= .07;
+  let expenses = Number(document.getElementById('test2').value);
+  let result = "$" + (expenses + element);
+  alert(result);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
