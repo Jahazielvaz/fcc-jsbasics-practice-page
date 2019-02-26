@@ -59,9 +59,41 @@ let characterLength = () => {
   alert(result);
 }
 
+//EXERCISE 5: Psychic spirit animal: Have the user share a small anecdote, and then randomly send them their spirit animal.
+// let spiritAnimal = () => {
+//   let animalArray = ["Wolf", "Tiger", "Eagle", "Lion", "Dragon", "Monkey", "Gazelle", "Raven", "Phoenix"];
+//   let data = document.getElementById('test5').value;
+//
+//   if(data == ""){
+//     alert("Please share anecdote");
+//     return false
+//   } else if (data < 10){
+//     alert("Your anecdote is too short");
+//     return false
+//   } else {
+//     let arrayCount = animalArray.length;
+//     for(var i = 0; i < arrayCount; i++ ){
+//       return alert(`Your spirit animal is ${Math.floor(Math.random(animalArray[i]))}`);
+//     }
+//
+//   }
+//
+// }
+
+//EXERCISE 6: Legacy Names; Have the user add their name to the list, and make sure it displays on the list
 
 
+let legacyNames = () => {
 
+  // let element = document.getElementById('name').value;
+  let names = ["Zed", " Vicious", " Jin"];
+  let namesValue = document.getElementById('name').value;
+  let currentNames = document.getElementById('current-names').innerHTML += names;
+  names.push(namesValue);
+
+}
+
+  currentNames
 
 
 
