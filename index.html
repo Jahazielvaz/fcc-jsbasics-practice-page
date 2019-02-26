@@ -53,6 +53,17 @@
         <p id="current-names"></p>
       </form>
 
+      <section id="list-container">
+        <h1 style="color: red; text-align: center;">UNSOLVED</h1>
+        <h1 style="text-align: center;">Please delete your tasks as you complete them</h1>
+        <h1 style="margin: 20px 0 0 0;" onchange="taskUpdater">Incomplete Tasks</h1>
+        <p id="tasks" style="font-weight: bold; border: 1px solid black; margin: 20px 0; padding: 10px;"></p>
+
+        <h2>Deleted Tasks</h2>
+        <p id="deleted-tasks" style="font-weight: bold; border: 1px solid black; margin: 20px 0; padding: 10px;"></p>
+        <button id="delete-tasks" onclick="taskDeleter()">DELETE</button>
+      </section>
+
 
     </section>
     <script src="./index.js"></script>

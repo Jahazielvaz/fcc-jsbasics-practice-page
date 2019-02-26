@@ -82,18 +82,32 @@ let characterLength = () => {
 
 //EXERCISE 6: Legacy Names; Have the user add their name to the list, and make sure it displays on the list
 
-
 let legacyNames = () => {
-
-  // let element = document.getElementById('name').value;
   let names = ["Zed", " Vicious", " Jin"];
   let namesValue = document.getElementById('name').value;
-  let currentNames = document.getElementById('current-names').innerHTML += names;
+  let currentNames = document.getElementById('current-names').innerHTML += "I'm replacing this line of code";
   names.push(namesValue);
 
+  if(namesValue == ""){
+    alert("Please type your name");
+  } else {
+      return currentNames;
+  }
 }
 
-  currentNames
+//EXERCISE 7: Deleting Tasks: Make a form that has a list of tasks, and make it so that the user can delete them with a button.
+let taskArr = [' cooking ', ' washing ', ' studying ', ' working ', ' time with fam ', ' traveling ', ' enjoying nature ', ' dating '];
+let currentTasks = document.getElementById('tasks').innerHTML = taskArr;
+
+let taskUpdater = () => {
+   currentTasks;
+}
+
+let taskDeleter = () => {
+  let deleter = taskArr.pop();
+  document.getElementById('deleted-tasks').innerHTML = deleter;
+}
+
 
 
 
