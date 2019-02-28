@@ -101,9 +101,13 @@ let taskArr = [' cooking ', ' washing ', ' studying ', ' working ', ' time with 
 let taskSection = document.getElementById('tasks');
 taskSection.innerHTML = taskArr;
 
-
-
 let taskDeleter = (taskArr) => {
+  taskArr.pop();
+  let currentTasks = taskSection.innerHTML = taskArr;
+}
+
+
+let taskDeletedQueue = (taskArr) => {
   let deleteSection = document.getElementById('deleted-tasks');
   deleteSection.innerHTML += taskArr.pop();
 
