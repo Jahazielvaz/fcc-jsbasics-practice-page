@@ -81,7 +81,7 @@ let characterLength = () => {
 // }
 
 //EXERCISE 6: Legacy Names; Have the user add their name to the list, and make sure it displays on the list
-
+//Remember that besides push() which appends an item to the end of the array, there's also unshift() which does the same thing but appends the item to the beginning of the array instead.
 let legacyNames = () => {
   let names = ["Zed", " Vicious", " Jin"];
   let namesValue = document.getElementById('name').value;
@@ -96,12 +96,10 @@ let legacyNames = () => {
 }
 
 //EXERCISE 7: Deleting Tasks: Make a form that has a list of tasks, and make it so that the user can delete them with a button.
+//Remember that besides the pop() which removes the last element in an array, there's also the shift() which removes the first element in an array.
 let taskArr = [' cooking ', ' washing ', ' studying ', ' working ', ' time with fam ', ' traveling ', ' enjoying nature ', ' dating '];
 let currentTasks = document.getElementById('tasks').innerHTML = taskArr;
 
-let taskUpdater = () => {
-   currentTasks;
-}
 
 let taskDeleter = () => {
   let deleter = taskArr.pop();
