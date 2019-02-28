@@ -98,16 +98,29 @@ let legacyNames = () => {
 //EXERCISE 7: Deleting Tasks: Make a form that has a list of tasks, and make it so that the user can delete them with a button.
 //Remember that besides the pop() which removes the last element in an array, there's also the shift() which removes the first element in an array.
 let taskArr = [' cooking ', ' washing ', ' studying ', ' working ', ' time with fam ', ' traveling ', ' enjoying nature ', ' dating '];
-let currentTasks = document.getElementById('tasks').innerHTML = taskArr;
+let taskSection = document.getElementById('tasks');
+taskSection.innerHTML = taskArr;
 
 
-let taskDeleter = () => {
-  let deleter = taskArr.pop();
-  document.getElementById('deleted-tasks').innerHTML = deleter;
+
+let taskDeleter = (taskArr) => {
+  let deleteSection = document.getElementById('deleted-tasks');
+  deleteSection.innerHTML += taskArr.pop();
+
 }
 
 
+
 //Testing
+// let myDescription = document.getElementById('sample').value;
+//
+// function sample1(param1){
+//   return document.getElementById('results').innerHTML = param1;
+// }
+//
+// function sample2(){
+//
+// }
 
 
 
