@@ -54,14 +54,18 @@
       </form>
 
       <section id="list-container">
-        <h1 style="color: red; text-align: center;">UNSOLVED</h1>
         <h1 style="text-align: center;">Please delete your tasks as you complete them</h1>
         <h1 style="margin: 20px 0 0 0;" onchange="taskUpdater">Incomplete Tasks</h1>
         <p id="tasks" style="font-weight: bold; border: 1px solid black; margin: 20px 0; padding: 10px;"></p>
 
         <h2>Deleted Tasks</h2>
         <p id="deleted-tasks" style="font-weight: bold; border: 1px solid black; margin: 20px 0; padding: 10px;"></p>
-        <button id="delete-tasks" onclick="taskDeletedQueue(taskArr) || taskDeleter(taskArr)">DELETE</button>
+        <button id="delete-tasks" onclick="taskDeleter(taskArr)">DELETE</button>
+        <p>
+          Bugs Left: It's always one step behind in deleting tasks in the task section. <br>
+          Needs to have an action for when it runs out of items. <br>
+          Would like to also be able to add tasks
+        </p>
       </section>
 
       <!-- <form onsubmit="sample1()" action="#" method="post">

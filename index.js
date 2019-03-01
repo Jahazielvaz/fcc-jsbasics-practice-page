@@ -102,17 +102,10 @@ let taskSection = document.getElementById('tasks');
 taskSection.innerHTML = taskArr;
 
 let taskDeleter = (taskArr) => {
-  taskArr.pop();
-  let currentTasks = taskSection.innerHTML = taskArr;
-}
-
-
-let taskDeletedQueue = (taskArr) => {
   let deleteSection = document.getElementById('deleted-tasks');
-  deleteSection.innerHTML += taskArr.pop();
-
+  let currentTasks = taskSection.innerHTML = taskArr;
+  deleteSection.innerHTML += taskArr.pop([taskArr.length -1]);
 }
-
 
 
 //Testing
