@@ -168,7 +168,10 @@ let powers = () => {
 }
 
 
-
+let deleteButton = () => {
+  // dragonDisplay.innerHTML = delete dragonDisplay.value;
+  dragonDisplay.innerHTML = "Find Out More About The Dragon";
+}
 
 
 
