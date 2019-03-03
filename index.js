@@ -107,17 +107,76 @@ let taskDeleter = (taskArr) => {
   deleteSection.innerHTML += taskArr.pop([taskArr.length -1]);
 }
 
+//EXERCISE 8: Image Slider: Insert a series of imgs w js, and have the button switch them as you onclick
+//Use switch and case statements for this one as the conditional of choice
+// let imageContainer = document.getElementById('image-container');
+// let selector = [0, 1, 2, 3, 4];
+// let currentSelection = "";
+// imageContainer.innerHTML = currentSelection;
+//
+// let switcherFunc = (currentSelection, selector) => {
+//
+//   switch(currentSelection){
+//     case selector[0]:
+//     return '<img src="./images/img1" style="max-width: 100%; height: 200px; "/>';
+//     break;
+//
+//     case selector[1]:
+//     return '<img src="./images/img2" style="max-width: 100%; height: 200px; "/>';
+//     break;
+//
+//     case selector[2]:
+//     return '<img src="./images/img3" style="max-width: 100%; height: 200px; "/>';
+//     break;
+//
+//     case selector[2]:
+//     return '<img src="./images/img4" style="max-width: 100%; height: 200px; "/>';
+//     break;
+//
+//     case selector[2]:
+//     return '<img src="./images/img5" style="max-width: 100%; height: 200px; "/>';
+//     break;
+//   }
+// }
+//
 
-//Testing
-// let myDescription = document.getElementById('sample').value;
-//
-// function sample1(param1){
-//   return document.getElementById('results').innerHTML = param1;
-// }
-//
-// function sample2(){
-//
-// }
+
+//EXERCISE 9: Dragon Persona: Use variables to call aspects of the dragon object. Make some buttons that represent a different attribute each, and have the message change on the screen.
+let dragon = {
+  legend: "It is said that the first dragon was born when merlin's elixir was accidentally combined with a dinosaur's frozen heart",
+  values: "Dragons believe in one thing, and only one thing. Survival of the fittest!",
+  powers: [" Breath of fire", " Flying", " Stomp stun"]
+}
+
+let dragonLegend = "legend";
+let dragonValues = "values";
+let dragonPowers = "powers";
+
+let dragonDisplay = document.getElementById('dragon-display');
+
+let legend = () => {
+
+  dragonDisplay.innerHTML = '<h1 style="text-align: center; color: red;">Legend</h1>' + dragon[dragonLegend];
+}
+
+let values = () => {
+  dragonDisplay.innerHTML = '<h1 style="text-align: center; color: orange;">Values</h1>' + dragon[dragonValues];
+}
+
+let powers = () => {
+  dragonDisplay.innerHTML = '<h1 style="text-align: center; color: purple;">Powers</h1>' + dragon[dragonPowers];
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

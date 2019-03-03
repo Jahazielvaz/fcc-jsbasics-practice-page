@@ -53,7 +53,7 @@
         <p id="current-names"></p>
       </form>
 
-      <section id="list-container">
+      <section class="list-container">
         <h1 style="text-align: center;">Please delete your tasks as you complete them</h1>
         <h1 style="margin: 20px 0 0 0;" onchange="taskUpdater">Incomplete Tasks</h1>
         <p id="tasks" style="font-weight: bold; border: 1px solid black; margin: 20px 0; padding: 10px;"></p>
@@ -68,6 +68,12 @@
         </p>
       </section>
 
+      <!-- <section class="list-container">
+        <h1 style="text-transform: uppercase; text-align: center;">Image Slider</h1>
+        <div id="image-container"></div>
+        <button id="image-switcher" onclick="switcherFunc(currentSelection, selector)">Switch Image</button>
+      </section> -->
+
       <!-- <form onsubmit="sample1()" action="#" method="post">
         <h1 style="color: #3c3;">Testing</h1>
         <p>On here we'll just conduct experiments.</p>
@@ -76,6 +82,13 @@
 
         <p id="results"></p>
       </form> -->
+
+      <section class="list-container">
+        <p class="display1" id="dragon-display">Find Out About The Dragon</p>
+        <button class="dragon-button" onclick="legend()">Legend</button>
+        <button class="dragon-button" onclick="values()">Values</button>
+        <button class="dragon-button" onclick="powers()">Powers</button>
+      </section>
     </section>
     <script src="./index.js"></script>
   </body>
