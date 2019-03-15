@@ -174,7 +174,28 @@ let deleteButton = () => {
 }
 
 
+//Have the user make profiles and then dynamically display them below
+let newData = document.querySelector('input.profile');
 
+let samle = () => {
+  let whereStuffGoes = []
+  whereStuffGoes.push(newData.value);
+  let whereStuff = document.getElementById('profile-results');
+
+  whereStuff.innerHTML = whereStuffGoes;
+
+
+}
+
+// let dataConverter = () => {
+//   let newResults = document.getElementById('profile-results');
+//
+//   for(let myData in newData){
+//     newResults.innerHTML = myData, newData[myData];
+//   }
+//
+//   return newResults;
+// }
 
 
 
