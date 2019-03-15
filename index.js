@@ -175,27 +175,43 @@ let deleteButton = () => {
 
 
 //Have the user make profiles and then dynamically display them below
-let newData = document.querySelector('input.profile');
+// let newData = document.querySelector('input.profile');
+//
+// let samle = () => {
+//   let whereStuffGoes = []
+//   whereStuffGoes.push(newData.value);
+//   let whereStuff = document.getElementById('profile-results');
+//
+//   whereStuff.innerHTML = whereStuffGoes;
+//
+//
+// }
 
-let samle = () => {
-  let whereStuffGoes = []
-  whereStuffGoes.push(newData.value);
-  let whereStuff = document.getElementById('profile-results');
 
-  whereStuff.innerHTML = whereStuffGoes;
+let dataConverter = () => {
+  let profileResults = document.getElementById('profile-results');
+  let myResults = [];
+  let sampleObject = [
+    {
+      "profile": {
+        "name": "John",
+        "profession": "lawyer",
+        "hobbies": ["biking", "hiking", "fishing"]
+      },
+      "extra info":{
+        "Admitted": false,
+        "candidate status": "pending"
+      }
+    }
+  ]
 
+  for(let results in sampleObject){
+    myResults.push(sampleObject[results]);
+  }
+
+  profileResults.innerHTML = myResults;
 
 }
-
-// let dataConverter = () => {
-//   let newResults = document.getElementById('profile-results');
-//
-//   for(let myData in newData){
-//     newResults.innerHTML = myData, newData[myData];
-//   }
-//
-//   return newResults;
-// }
 
 
 
