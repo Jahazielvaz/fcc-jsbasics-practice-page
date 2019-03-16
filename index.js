@@ -188,6 +188,7 @@ let deleteButton = () => {
 // }
 
 
+//EXERCISE 10: Return profile results: Iterating through an object, and having the results display at the bottom of container
 let dataConverter = () => {
   let profileResults = document.getElementById('profile-results');
   let myResults = [];
@@ -213,9 +214,19 @@ let dataConverter = () => {
 
 }
 
+//EXERCISE 11: Lotto Machine: Have the machine randomize the digits every time user spins it (clicks), and then use one of the following ways of checking to see if the number inputted by user match the given number
+let testNumbers = "12345";
 
 
-
+let numberChecker = () => {
+  let numbersValue = document.getElementById('numbers-value');
+  let resultsOutput = document.getElementById('results-output');
+  if(testNumbers === numbersValue.value){
+    resultsOutput.innerHTML = "CONGRATULATIONS!!!! YOU ARE THE LUCKY WINNER!!!!!";
+  } else {
+    resultsOutput.innerHTML = "Sorry. Better luck next time.";
+  }
+}
 
 
 
