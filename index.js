@@ -229,6 +229,38 @@ let numberChecker = () => {
 }
 
 
+//EXERCISE 12: Math Equations: Make a series of different math equations that use the Math method
+let output = document.getElementById('output');
+
+let pi = () => {
+  output.innerHTML = Math.PI;
+  return output.value;
+}
+
+let round = () => {
+  let userInput = document.getElementById('user-input').value;
+  Number(userInput);
+  let result = Math.round(userInput);
+  output.innerHTML = result;
+}
+
+let roundUp = () => {
+  let userInput = document.getElementById('user-input2').value;
+  let result = Math.ceil(userInput);
+
+  output.innerHTML = result;
+}
+
+let roundDown = () => {
+  let userInput = document.getElementById('user-input3').value;
+  let result = Math.floor(userInput);
+
+  output.innerHTML = result;
+}
+
+let randomize = (min, max) => {
+  output.innerHTML =  Math.floor(Math.random() * (max - min)) + min;
+}
 
 
 
