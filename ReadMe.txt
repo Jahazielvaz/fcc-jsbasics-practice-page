@@ -1,2 +1,4 @@
 The map() feature is very powerful. You can apply the effects to each dataType in an array. The part that I still don't fully know is why or when exactly you need to have the array equal the array.map() and why you can't just do it directly.
 Remember that when you call the function inside of the map higher order function, you should include the parenthesis.
+
+Spread/Rest operators: These 2 are so powerful. I think I like the rest operator even more. The cool thing is that you can actually combine both of the to make insanely versatile functions. You can use the rest operator to make sure you the amount of parameters in the function can be expanded dynamically. Then you build an array with the values of as many parameters as you want. Then you use the spread operator with the array as the value, and what will happen is, the function is going to be filled with all the data inside the array.
