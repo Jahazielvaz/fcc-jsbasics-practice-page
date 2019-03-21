@@ -1,5 +1,6 @@
 The map() feature is very powerful. You can apply the effects to each dataType in an array. The part that I still don't fully know is why or when exactly you need to have the array equal the array.map() and why you can't just do it directly.
-Remember that when you call the function inside of the map higher order function, you should include the parenthesis.
+Remember that when you call the function inside of the map higher order function, you should not include the parenthesis.
+I have found the answer to all my questions regarding the map feature. The reason why you need to have the array equal the array .map is because it needs a place to store the desired changes. Furthermore, whenever I would use the map feature, it would replace the values I originally had with the values of the function inside the map feature. The reason why this was happening, was because I was forgetting to use the return statement, and furthermore, I needed to have parameter that can store my original array, within the function that was being mapped. And I needed to add the parameter plus the calculation or effect I wanted the array to have.
 
 Spread/Rest operators: These 2 are so powerful. I think I like the rest operator even more. The cool thing is that you can actually combine both of the to make insanely versatile functions. You can use the rest operator to make sure you the amount of parameters in the function can be expanded dynamically. Then you build an array with the values of as many parameters as you want. Then you use the spread operator with the array as the value, and what will happen is, the function is going to be filled with all the data inside the array.
 
@@ -7,3 +8,5 @@ Destructuring is also very cool. You can take a simple object, and turn each of 
 
 Today I have learned about destructuring multi dimensional objects. That's exactly what I was wondering how to do. I also found out that you can destructure  nested objects using bracket notation. I still don't know if there is a way to include multiple properties, inside one variable with the Destructuring.
 You can also destructure arrays, by using one of the var keywords followed by an array containing the variables you wish to create, and then, by either equaling the content inside the array you wish to destructure, or the name of the array you wish to destructure. I've been messing with this and I'm also recapping some of the stuff I previously learned so I don't forget it
+
+Going along with the destructuring theme, you can actually use the rest operator to store the remainder of the array you're destructuring.
