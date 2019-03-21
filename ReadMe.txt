@@ -5,4 +5,4 @@ Spread/Rest operators: These 2 are so powerful. I think I like the rest operator
 
 Destructuring is also very cool. You can take a simple object, and turn each of the properties in it into a variable. I still don't know how it works with more complex objects. I know you can make up the the list of variable names, and just assign them to the key you desire, but what I still don't know is if you can assign all the properties that share one name, to one variable and basically turn that into an array. I'm about to try it.
 
-Today I have learned about destructuring multi dimensional objects. That's exactly what I was wondering how to do. I also found out that you can destructure  nested objects using bracket notation
+Today I have learned about destructuring multi dimensional objects. That's exactly what I was wondering how to do. I also found out that you can destructure  nested objects using bracket notation. I still don't know if there is a way to include multiple properties, inside one variable with the Destructuring
