@@ -10,3 +10,4 @@ Today I have learned about destructuring multi dimensional objects. That's exact
 You can also destructure arrays, by using one of the var keywords followed by an array containing the variables you wish to create, and then, by either equaling the content inside the array you wish to destructure, or the name of the array you wish to destructure. I've been messing with this and I'm also recapping some of the stuff I previously learned so I don't forget it
 
 Going along with the destructuring theme, you can actually use the rest operator to store the remainder of the array you're destructuring.
+Furthermore you can also use destructuring within your function by simply creating an object as a parameter, and adding the properties you desire. Then when you call the function you can include the object name that contains the desired properties, and this will destructure that object.
