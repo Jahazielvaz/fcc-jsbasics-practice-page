@@ -15,3 +15,14 @@ Furthermore you can also use destructuring within your function by simply creati
 I'm now exploring simple fields. This is pretty useful when you're writing an object literal where you need to use the parameter inputs as the values, or if you need to have empty strings, you can simply omit the values and it'll know to fill them out when you call the function. In other words, you can have 3 variables each with a given value. You can then create an object with the keys that have the same names as the 3 variables, and you can simply omit the values. es6 will know to grab those variables and fill the values of the keys with the same values as the variables.
 
 You can write concise declarative functions inside an object, and omit the function, var, let etc keywords, and the equal sign. This only works as long as it's inside of an object (I think this explains a lot of the confusion I had with react and functions)
+
+There are different ways of creating objects
+1-Object literals (These are the standard ones you know and trust)
+  let myObj = {
+    name: "Paulie",
+    email: "paulie2000@mail.com",
+    age: 24
+  }
+
+2-New Object Syntax (So far I only know how to create one empty object using this method. Need to investigate further). Does the same as the object literal but for simplicity, readability, and execution speed, we are advised to use the object literal instead. 
+  let myObj = new.Object()
