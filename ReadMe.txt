@@ -11,3 +11,7 @@ You can also destructure arrays, by using one of the var keywords followed by an
 
 Going along with the destructuring theme, you can actually use the rest operator to store the remainder of the array you're destructuring.
 Furthermore you can also use destructuring within your function by simply creating an object as a parameter, and adding the properties you desire. Then when you call the function you can include the object name that contains the desired properties, and this will destructure that object.
+
+I'm now exploring simple fields. This is pretty useful when you're writing an object literal where you need to use the parameter inputs as the values, or if you need to have empty strings, you can simply omit the values and it'll know to fill them out when you call the function. In other words, you can have 3 variables each with a given value. You can then create an object with the keys that have the same names as the 3 variables, and you can simply omit the values. es6 will know to grab those variables and fill the values of the keys with the same values as the variables.
+
+You can write concise declarative functions inside an object, and omit the function, var, let etc keywords, and the equal sign. This only works as long as it's inside of an object (I think this explains a lot of the confusion I had with react and functions)
