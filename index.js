@@ -264,6 +264,16 @@ let randomize = (min, max) => {
 
 
 
+let storyFunc = (result) => {
+  let name = [document.getElementById('story-name').value];
+  let output = document.getElementById('story-results');
+  name = name.map((nameRes) => {
+    return `It all began when ${nameRes} arrived to the city of Magnolia. It is there that he encountered the terrible beast that had plagued the land. ${nameRes} fought valiantly, and it nearly cost him his life, but none-theless, his fierce might won the day. Upon delivering the final blow ${nameRes} noticed a familiarity in the monster's eyes. It was there that he discovered that the monster was none other than his supposedly dead brother! He had been cursed to torment people. It took ${nameRes} 3 years to find the cure, but nonetheless, he did find the cure, and was reunited with his long lost brother. ${nameRes} in his infinite wisdom reminds us that love conquers all`
+  })
+  return output.innerHTML = name;
+
+}
+
 
 
 
