@@ -24,5 +24,27 @@ There are different ways of creating objects
     age: 24
   }
 
-2-New Object Syntax (So far I only know how to create one empty object using this method. Need to investigate further). Does the same as the object literal but for simplicity, readability, and execution speed, we are advised to use the object literal instead. 
-  let myObj = new.Object()
+2-New Object Syntax (So far I only know how to create one empty object using this method. Need to investigate further. Apparently you add properties using dot and bracket notation. I have to try it out). Does the same as the object literal but for simplicity, readability, and execution speed, we are advised to use the object literal instead.
+  let myObj = new Object()
+
+3-Constructor (I've been spending a bunch of time learning and understanding how constructors work. This is a lot so brace yourself. Constructors create objects all centered around the same theme. There's the es5 and es6 syntax. Here I'm showing an example of each of them)
+  ES5 CONSTRUCTOR
+  function Car(make, model, year){
+    this.make = make,
+    this.model = model,
+    this.year = year
+  }
+
+  ES6 CONSTRUCTOR
+  class Car{
+    constructor(make, model, year){
+      this._make = make,
+      this._model = model,
+      this._year = year
+    }
+  }
+
+  HOW TO CREATE A NEW OBJECT USING CONSTRUCTOR (You create the object the same way)
+  let myCar = new Car("Honda", "Accord", 2010)
+
+  
