@@ -68,3 +68,7 @@ class Car{
 }
 
 I'm still trying to figure out how to get the setter function to trigger, and how to call the getter and setter functions while keeping the main constructor attributes anonymous
+
+On my process or learning about getters and setters I also learned a little bit about error handling. I know how to throw a new error, and define it, but there seems to be much more advanced error handling, that I still don't know too well. I'll explore that a bit more in the future. For now, I just show you a simple example
+EXAMPLE
+throw new Error("The message you want it to display when it gives them an error");
