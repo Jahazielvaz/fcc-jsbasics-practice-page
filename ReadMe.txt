@@ -49,3 +49,22 @@ There are different ways of creating objects
 
 Using getter and setter functions: This has been a fairly confusing topic for me so far, but I think I'm starting to get it a little bit. Here's my attempt at explaining this. getter fuctions access a property within your constructor so that the property can remain private, and return the value of that property. I suppose the purpose of this is so that you can use the name of the function as the property name so that people don't have access to the real property name and they can still get the value. Although, I still don't fully understand how the original property is privatized. I also don't fully know if there's a way to include all properties inside of the constructor into one getter function, and be able to access all properties from within it, or if you have to create one getter method for each of the properties.
 Setter methods allow you to change the value of said property, and it's a method so you're able to add as much logic as you want to said property. For example, you can add some validation by throwing errors if the property values don't meet certain criteria, although when I tried validating it, it worked but only when I accessed the setter function, but it didn't work when I access the property the way I normally access it. Again, I think this has to do with knowing how to privatize my properties and globalize the getter and setter methods. Will provide examples below.
+EXAMPLE
+class Car{
+  constructor(firstName, lastName, email, password){
+    this._firstName,
+    this._lastName,
+    this._email,
+    this._password
+  }
+
+  get fullName(){
+    return this._firstName + " " + this._lastName;
+  }
+
+  setFullName(name){
+    if(name )
+  }
+}
+
+I'm still trying to figure out how to get the setter function to trigger, and how to call the getter and setter functions while keeping the main constructor attributes anonymous
